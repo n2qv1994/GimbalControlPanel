@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>CustomizedButton.qml</file>
+        <file>GimbalControl.qml</file>
+        <file>EOSensor.qml</file>
+        <file>IRSensor.qml</file>
+        <file>IRLens.qml</file>
+        <file>VideoProcessorPanel.qml</file>
+        <file>GeoLock.qml</file>
+        <file>Configuration.qml</file>
+        <file>GVPConfigurationPanel.qml</file>
+        <file>FirmwareUpdate.qml</file>
+        <file>OverlayPanel.qml</file>
+        <file>LaserRangeFinder.qml</file>
+        <file>PacketStreamPanel.qml</file>
+        <file>HeaderController.qml</file>
+    </qresource>
+</RCC>
