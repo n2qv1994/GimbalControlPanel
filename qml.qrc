@@ -16,5 +16,6 @@
         <file>LaserRangeFinder.qml</file>
         <file>PacketStreamPanel.qml</file>
         <file>HeaderController.qml</file>
+        <file>CustomizedColor.qml</file>
     </qresource>
 </RCC>

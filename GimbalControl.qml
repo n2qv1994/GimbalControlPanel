@@ -2,8 +2,14 @@ import QtQuick 2.7
 import QtQuick.Controls 2.1
 import QtQuick.Layouts 1.3
 
+
 Rectangle {
-    color: "#100f0f"
+
+    CustomizedColor {
+        id: customizeColor
+    }
+
+    color: customizeColor.backgoundColor
     implicitWidth: 1080
     implicitHeight: 580
     border.width: 2
