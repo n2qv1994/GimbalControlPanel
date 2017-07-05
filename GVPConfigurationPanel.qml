@@ -10,81 +10,25 @@ Rectangle {
     border.color: "#ffffff"
     Rectangle {
         id: rectangleFocus
-        x: 15
-        y: 21
-        width: 490
-        height: 84
+        x: 33
+        y: 22
+        width: 476
+        height: 305
         color: "#100f0f"
         radius: 4
         border.width: 1
         border.color: "#ffffff"
 
         CustomizedButton {
-            id: customizedButton1
-            x: 228
-            y: 9
-            width: 83
-            height: 29
-            color: "#888a85"
-
-            Text {
-                id: text7
-                x: 8
-                y: 8
-                color: "#ffffff"
-                text: qsTr("Focus Auto")
-                font.pixelSize: 12
-            }
-        }
-
-        CustomizedButton {
-            id: customizedButton2
-            x: 79
-            y: 8
-            width: 83
-            height: 29
-            color: "#888a85"
-
-            Text {
-                id: text8
-                x: 5
-                y: 8
-                width: 74
-                height: 13
-                color: "#ffffff"
-                text: qsTr("Focus Manual")
-                font.pixelSize: 12
-            }
-        }
-
-        Slider {
-            id: slider
-            x: 84
-            y: 39
-            width: 227
-            height: 31
-            value: 0.5
-
-            Text {
-                id: text6
-                x: 16
-                y: 25
-                color: "#ffffff"
-                text: qsTr("0")
-                font.pixelSize: 12
-            }
-        }
-
-        CustomizedButton {
             id: customizedButton3
-            x: 371
-            y: 44
-            width: 66
+            x: 107
+            y: 267
+            width: 84
             height: 20
             color: "#888a85"
             Text {
                 id: text9
-                x: 19
+                x: 28
                 y: 4
                 color: "#ffffff"
                 text: qsTr("Read")
@@ -92,41 +36,196 @@ Rectangle {
             }
         }
 
+        Text {
+            id: text1
+            x: 91
+            y: 30
+            color: "#ffffff"
+            text: qsTr("Enable Internal GNSS")
+            font.pixelSize: 12
+        }
+
+        CheckBox {
+            id: checkBox
+            x: 39
+            y: 16
+        }
+
+        Text {
+            id: text3
+            x: 91
+            y: 69
+            color: "#ffffff"
+            text: qsTr("Enable Almospheric Altitude ")
+            font.pixelSize: 12
+        }
+
+        CheckBox {
+            id: checkBox1
+            x: 39
+            y: 55
+        }
+
+        ComboBox {
+            id: comboBox
+            x: 170
+            y: 102
+            width: 175
+            height: 25
+            textRole: "key"
+            model: ListModel {
+                ListElement { key: "unknown"; value: 123 }
+                ListElement { key: "unknown"; value: 456 }
+                ListElement { key: "unknown"; value: 789 }
+            }
+        }
+
+        Text {
+            id: text8
+            x: 85
+            y: 108
+            color: "#ffffff"
+            text: qsTr("Vehicle Type")
+            font.pixelSize: 12
+        }
+
         CustomizedButton {
             id: customizedButton4
-            x: 371
-            y: 8
-            width: 83
-            height: 29
+            x: 274
+            y: 267
+            width: 84
+            height: 20
             color: "#888a85"
             Text {
-                id: text10
-                x: 5
-                y: 8
-                width: 74
-                height: 13
+                id: text17
+                x: 28
+                y: 4
                 color: "#ffffff"
-                text: qsTr("Focus Infinity")
+                text: qsTr("Write")
                 font.pixelSize: 12
             }
         }
 
         Text {
-            id: text1
-            x: 15
-            y: 36
+            id: text5
+            x: 334
+            y: 31
             color: "#ffffff"
-            text: qsTr("Focus
-Position")
+            text: qsTr("Enable Magnetometers")
+            font.pixelSize: 12
+        }
+
+        CheckBox {
+            id: checkBox2
+            x: 282
+            y: 17
+        }
+
+        Text {
+            id: text6
+            x: 334
+            y: 70
+            color: "#ffffff"
+            text: qsTr("Enable Velocity Heading ")
+            font.pixelSize: 12
+        }
+
+        CheckBox {
+            id: checkBox3
+            x: 282
+            y: 56
+        }
+
+        ComboBox {
+            id: comboBox1
+            x: 170
+            y: 133
+            width: 175
+            height: 25
+            textRole: "key"
+            model: ListModel {
+                ListElement { key: "unknown"; value: 123 }
+                ListElement { key: "unknown"; value: 456 }
+                ListElement { key: "unknown"; value: 789 }
+            }
+        }
+
+        Text {
+            id: text10
+            x: 36
+            y: 135
+            color: "#ffffff"
+            text: qsTr("Accelerometer Range")
+            font.pixelSize: 12
+        }
+
+        ComboBox {
+            id: comboBox2
+            x: 170
+            y: 164
+            width: 175
+            height: 25
+            textRole: "key"
+            model: ListModel {
+                ListElement { key: "unknown"; value: 123 }
+                ListElement { key: "unknown"; value: 456 }
+                ListElement { key: "unknown"; value: 789 }
+            }
+        }
+
+        Text {
+            id: text11
+            x: 59
+            y: 170
+            color: "#ffffff"
+            text: qsTr("Gyroscope Range")
+            font.pixelSize: 12
+        }
+
+        ComboBox {
+            id: comboBox3
+            x: 170
+            y: 195
+            width: 175
+            height: 25
+            textRole: "key"
+            model: ListModel {
+                ListElement { key: "unknown"; value: 123 }
+                ListElement { key: "unknown"; value: 456 }
+                ListElement { key: "unknown"; value: 789 }
+            }
+        }
+
+        Text {
+            id: text13
+            x: 34
+            y: 201
+            color: "#ffffff"
+            text: qsTr("Magnetometer Range")
+            font.pixelSize: 12
+        }
+
+        CheckBox {
+            id: checkBox4
+            x: 282
+            y: 221
+        }
+
+        Text {
+            id: text14
+            x: 327
+            y: 235
+            color: "#ffffff"
+            text: qsTr("Save Settings")
             font.pixelSize: 12
         }
     }
 
     Rectangle {
         id: rectangle1
-        x: 26
+        x: 55
         y: 8
-        width: 50
+        width: 121
         height: 26
         color: "#100f0f"
 
@@ -137,782 +236,461 @@ Position")
             width: 47
             height: 15
             color: "#ffffff"
-            text: qsTr("Focus")
+            text: qsTr("Ahrs Configuration")
             font.pixelSize: 12
         }
     }
 
     Rectangle {
-        id: rectangleConnection1
-        x: 15
-        y: 127
-        width: 490
-        height: 441
+        id: rectangleFocus1
+        x: 33
+        y: 356
+        width: 476
+        height: 194
         color: "#100f0f"
         radius: 4
+        border.color: "#ffffff"
         border.width: 1
 
-        TextEdit {
-            id: textEdit1
+        CustomizedButton {
+            id: customizedButton6
+            x: 26
+            y: 103
+            width: 150
+            height: 21
+            color: "#888a85"
+            Text {
+                id: text12
+                x: 26
+                y: 4
+                width: 74
+                height: 13
+                color: "#ffffff"
+                text: qsTr("Start 2D Calibration")
+                font.pixelSize: 12
+            }
+        }
+
+        Text {
+            id: text22
+            x: 26
+            y: 73
             color: "#ffffff"
-            text: qsTr("Iris Set Select:")
-            anchors.fill: parent
-            anchors.rightMargin: 237
-            anchors.bottomMargin: 367
-            anchors.topMargin: 59
+            text: qsTr("Calibration Status: Unknow")
             font.pixelSize: 12
-            anchors.leftMargin: 75
+        }
+
+        ProgressBar {
+            id: progressBar
+            x: 26
+            y: 33
+            width: 418
+            height: 26
+            value: 0.5
         }
 
         CustomizedButton {
             id: customizedButton7
-            x: 358
-            y: 21
-            width: 119
-            height: 26
+            x: 197
+            y: 103
+            width: 150
+            height: 21
             color: "#888a85"
             Text {
-                id: text14
-                x: 19
-                y: 6
+                id: text15
+                x: 26
+                y: 4
+                width: 74
+                height: 13
                 color: "#ffffff"
-                text: qsTr("Auto Exposure")
+                text: qsTr("Start 3D Calibration")
                 font.pixelSize: 12
             }
         }
 
         CustomizedButton {
             id: customizedButton8
-            x: 358
-            y: 57
-            width: 119
-            height: 26
+            x: 367
+            y: 103
+            width: 77
+            height: 21
             color: "#888a85"
             Text {
-                id: text15
+                id: text16
                 x: 19
-                y: 7
+                y: 4
+                width: 74
+                height: 13
                 color: "#ffffff"
-                text: qsTr("Iris Manual On")
+                text: qsTr("Cancel")
                 font.pixelSize: 12
-            }
-        }
-
-        ComboBox {
-            id: comboBox
-            x: 126
-            y: 76
-            width: 120
-            height: 26
-            anchors.leftMargin: 164
-            anchors.rightMargin: 159
-            anchors.bottomMargin: 367
-            anchors.topMargin: 57
-            anchors.fill: parent
-            textRole: "key"
-            model: ListModel {
-                ListElement { key: "F32"; value: 123 }
-                ListElement { key: "F32"; value: 456 }
-                ListElement { key: "F32"; value: 789 }
-            }
-        }
-
-        TextEdit {
-            id: textEdit2
-            x: -6
-            y: 4
-            color: "#ffffff"
-            text: qsTr("Shutler Speach Select:")
-            anchors.rightMargin: 275
-            anchors.leftMargin: 37
-            anchors.fill: parent
-            font.pixelSize: 12
-            anchors.bottomMargin: 326
-            anchors.topMargin: 101
-        }
-
-        ComboBox {
-            id: comboBox1
-            x: 130
-            y: 74
-            width: 120
-            height: 26
-            anchors.rightMargin: 158
-            textRole: "key"
-            anchors.leftMargin: 165
-            anchors.fill: parent
-            anchors.topMargin: 100
-            anchors.bottomMargin: 325
-            model: ListModel {
-                ListElement {
-                    key: "1/4"
-                    value: 123
-                }
-
-                ListElement {
-                    key: "1/8"
-                    value: 456
-                }
-
-                ListElement {
-                    key: "1/12"
-                    value: 789
-                }
             }
         }
 
         CustomizedButton {
             id: customizedButton9
-            x: 358
-            y: 95
-            width: 119
-            height: 26
+            x: 142
+            y: 144
+            width: 218
+            height: 21
             color: "#888a85"
             Text {
-                id: text17
-                x: 9
-                y: 7
+                id: text19
+                x: 26
+                y: 4
+                width: 74
+                height: 13
                 color: "#ffffff"
-                text: qsTr("Shutler Manual On")
+                text: qsTr("Read Magnetometer  Progress ")
                 font.pixelSize: 12
             }
         }
+    }
 
-        TextEdit {
-            id: textEdit3
-            x: -13
-            y: 3
+    Rectangle {
+        id: rectangle7
+        x: 55
+        y: 342
+        width: 158
+        height: 26
+        color: "#100f0f"
+        Text {
+            id: text18
+            x: 8
+            y: 8
+            width: 150
+            height: 15
             color: "#ffffff"
-            text: qsTr("Gain Camera Set:")
-            anchors.rightMargin: 237
-            anchors.leftMargin: 61
-            anchors.fill: parent
+            text: qsTr("Magnetometer Calibration ")
             font.pixelSize: 12
-            anchors.topMargin: 146
-            anchors.bottomMargin: 280
         }
+    }
 
-        ComboBox {
-            id: comboBox2
-            x: 134
-            y: 77
-            width: 120
-            height: 26
-            anchors.rightMargin: 158
-            textRole: "key"
-            anchors.leftMargin: 165
-            anchors.fill: parent
-            anchors.bottomMargin: 280
-            anchors.topMargin: 144
-            model: ListModel {
-                ListElement {
-                    key: "0"
-                    value: 123
-                }
-
-                ListElement {
-                    key: "2"
-                    value: 456
-                }
-
-                ListElement {
-                    key: "4"
-                    value: 789
-                }
+    Rectangle {
+        id: rectangleFocus2
+        x: 533
+        y: 22
+        width: 476
+        height: 305
+        color: "#100f0f"
+        radius: 4
+        border.color: "#ffffff"
+        border.width: 1
+        CustomizedButton {
+            id: customizedButton5
+            x: 107
+            y: 267
+            width: 84
+            height: 20
+            color: "#888a85"
+            Text {
+                id: text20
+                x: 28
+                y: 4
+                color: "#ffffff"
+                text: qsTr("Read")
+                font.pixelSize: 12
             }
         }
 
         CustomizedButton {
             id: customizedButton10
-            x: 358
-            y: 135
-            width: 119
-            height: 26
-            color: "#888a85"
-            Text {
-                id: text18
-                x: 28
-                y: 8
-                color: "#ffffff"
-                text: qsTr("Full Manual")
-                horizontalAlignment: Text.AlignHCenter
-                font.pixelSize: 12
-            }
-        }
-
-        CustomizedButton {
-            id: customizedButton11
-            x: 179
-            y: 172
-            width: 147
-            height: 26
-            color: "#888a85"
-            Text {
-                id: text19
-                x: 9
-                y: 7
-                color: "#ffffff"
-                text: qsTr("Read Exposure Setttings")
-                font.pixelSize: 12
-            }
-        }
-        border.color: "#ffffff"
-    }
-
-    Rectangle {
-        id: rectangle2
-        x: 26
-        y: 111
-        width: 68
-        height: 26
-        color: "#100f0f"
-        Text {
-            id: text16
-            x: 8
-            y: 8
-            width: 47
-            height: 15
-            color: "#ffffff"
-            text: qsTr("Exposure")
-            font.pixelSize: 12
-        }
-    }
-
-    Rectangle {
-        id: rectangleConnection2
-        x: 29
-        y: 333
-        width: 462
-        height: 51
-        color: "#100f0f"
-        radius: 4
-        border.color: "#ffffff"
-
-        CustomizedButton {
-            id: customizedButton12
-            x: 376
-            y: 16
-            width: 66
-            height: 20
-            color: "#888a85"
-            Text {
-                id: text20
-                x: 19
-                y: 4
-                color: "#ffffff"
-                text: qsTr("Read")
-                font.pixelSize: 12
-            }
-        }
-
-        RadioButton {
-            id: radioButton
-            x: 48
-            y: 20
-            width: 24
-            height: 20
-        }
-
-        RadioButton {
-            id: radioButton1
-            x: 194
-            y: 25
-            width: 48
-            height: 11
-            checked: true
-        }
-
-        Text {
-            id: text11
-            x: 94
-            y: 25
-            color: "#ffffff"
-            text: qsTr("Enable")
-            font.pixelSize: 12
-        }
-
-        Text {
-            id: text12
-            x: 256
-            y: 23
-            color: "#ffffff"
-            text: qsTr("Disable")
-            font.pixelSize: 12
-        }
-        border.width: 1
-    }
-
-    Rectangle {
-        id: rectangle4
-        x: 46
-        y: 323
-        width: 118
-        height: 26
-        color: "#100f0f"
-        Text {
-            id: text21
-            x: 6
-            y: 6
-            width: 105
-            height: 15
-            color: "#ffffff"
-            text: qsTr("IR Cut Filter Mode")
-            font.pixelSize: 12
-        }
-    }
-
-    Rectangle {
-        id: rectangleConnection3
-        x: 29
-        y: 404
-        width: 462
-        height: 51
-        color: "#100f0f"
-        radius: 4
-        border.color: "#ffffff"
-        border.width: 1
-
-        RadioButton {
-            id: radioButton2
-            x: 38
-            y: 12
-        }
-
-        Text {
-            id: text13
-            x: 95
-            y: 26
-            color: "#ffffff"
-            text: qsTr("Nomal")
-            font.pixelSize: 12
-        }
-
-        RadioButton {
-            id: radioButton3
-            x: 198
-            y: 12
-        }
-
-        Text {
-            id: text25
-            x: 260
-            y: 28
-            color: "#ffffff"
-            text: qsTr("Low")
-            font.family: "Times New Roman"
-            font.pixelSize: 12
-        }
-    }
-
-    Rectangle {
-        id: rectangleConnection4
-        x: 29
-        y: 481
-        width: 462
-        height: 51
-        color: "#100f0f"
-        radius: 4
-        border.color: "#ffffff"
-        CustomizedButton {
-            id: customizedButton14
-            x: 383
-            y: 15
-            width: 66
+            x: 274
+            y: 267
+            width: 84
             height: 20
             color: "#888a85"
             Text {
                 id: text23
-                x: 19
+                x: 28
                 y: 4
                 color: "#ffffff"
-                text: qsTr("Read")
+                text: qsTr("Write")
                 font.pixelSize: 12
             }
         }
 
-        ComboBox {
-            id: comboBox3
-            x: 286
-            y: 16
-            width: 81
-            height: 20
-            textRole: "key"
-            model: ListModel {
-                ListElement {
-                    key: "0"
-                    value: 123
-                }
-
-                ListElement {
-                    key: "2"
-                    value: 456
-                }
-
-                ListElement {
-                    key: "4"
-                    value: 789
-                }
-            }
-        }
-
-        RadioButton {
-            id: radioButton4
-            x: 10
-            y: 22
-            width: 26
-            height: 20
-            checked: true
-        }
-
-        RadioButton {
-            id: radioButton6
-            x: 169
-            y: 12
+        CheckBox {
+            id: checkBox9
+            x: 282
+            y: 221
         }
 
         Text {
-            id: text26
-            x: 42
-            y: 23
+            id: text29
+            x: 327
+            y: 235
             color: "#ffffff"
-            text: qsTr("Disable")
-            font.pixelSize: 12
-        }
-
-        Text {
-            id: text27
-            x: 138
-            y: 24
-            color: "#ffffff"
-            text: qsTr("Auto")
-            font.pixelSize: 12
-        }
-
-        Text {
-            id: text28
-            x: 222
-            y: 23
-            color: "#ffffff"
-            text: qsTr("Manual")
-            font.pixelSize: 12
-        }
-        border.width: 1
-    }
-
-    Rectangle {
-        id: rectangle5
-        x: 46
-        y: 390
-        width: 145
-        height: 26
-        color: "#100f0f"
-        Text {
-            id: text22
-            x: 5
-            y: 5
-            width: 105
-            height: 15
-            color: "#ffffff"
-            text: qsTr("Auto Focus Sensivility")
+            text: qsTr("Save Settings")
             font.pixelSize: 12
         }
     }
 
     Rectangle {
-        id: rectangle6
-        x: 46
-        y: 474
-        width: 66
-        height: 19
-        color: "#100f0f"
-        Text {
-            id: text24
-            x: 19
-            y: 2
-            width: 62
-            height: 15
-            color: "#ffffff"
-            text: qsTr("Delog")
-            font.pixelSize: 12
-        }
-
-        RadioButton {
-            id: radioButton5
-            x: 73
-            y: 19
-        }
-    }
-
-    Rectangle {
-        id: rectangleConnection5
-        x: 570
-        y: 21
-        width: 490
-        height: 537
-        color: "#100f0f"
-        radius: 4
-        border.color: "#ffffff"
-        CustomizedButton {
-            id: customizedButton5
-            x: 210
-            y: 25
-            width: 83
-            height: 29
-            color: "#888a85"
-            Text {
-                id: text29
-                x: 8
-                y: 8
-                color: "#ffffff"
-                text: qsTr("Max Zoom")
-                font.pixelSize: 12
-            }
-        }
-
-        CustomizedButton {
-            id: customizedButton6
-            x: 54
-            y: 25
-            width: 83
-            height: 29
-            color: "#888a85"
-            Text {
-                id: text30
-                x: 12
-                y: 8
-                width: 74
-                height: 13
-                color: "#ffffff"
-                text: qsTr("Min Zoom")
-                font.pixelSize: 12
-            }
-        }
-
-        TextEdit {
-            id: textEdit4
-            color: "#ffffff"
-            text: qsTr("Zoom
-Position
-Demand")
-            horizontalAlignment: Text.AlignHCenter
-            anchors.rightMargin: 390
-            anchors.leftMargin: 33
-            anchors.fill: parent
-            font.pixelSize: 12
-            anchors.bottomMargin: 292
-            anchors.topMargin: 102
-        }
-
-        Slider {
-            id: slider1
-            x: 158
-            y: 108
-            width: 294
-            height: 31
-            Text {
-                id: text31
-                x: 128
-                y: 30
-                width: 62
-                height: 21
-                color: "#ffffff"
-                text: qsTr("Position")
-                font.pixelSize: 12
-            }
-            value: 0.5
-        }
-
-        CustomizedButton {
-            id: customizedButton15
-            x: 369
-            y: 25
-            width: 83
-            height: 29
-            color: "#888a85"
-            Text {
-                id: text33
-                x: 29
-                y: 8
-                width: 74
-                height: 13
-                color: "#ffffff"
-                text: qsTr("Stop")
-                font.pixelSize: 12
-            }
-        }
-
-        TextEdit {
-            id: textEdit5
-            x: -6
-            y: 3
-            color: "#ffffff"
-            text: qsTr("Zoom
-Velocity
-Demand")
-            anchors.rightMargin: 390
-            anchors.leftMargin: 33
-            anchors.fill: parent
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignHCenter
-            anchors.topMargin: 192
-            anchors.bottomMargin: 202
-        }
-
-        Slider {
-            id: slider2
-            x: 158
-            y: 204
-            width: 294
-            height: 31
-            Text {
-                id: text32
-                x: 145
-                y: 38
-                width: 62
-                height: 21
-                color: "#ffffff"
-                text: qsTr("0")
-                font.pixelSize: 12
-            }
-            value: 0.5
-        }
-        border.width: 1
-    }
-
-    Rectangle {
-        id: rectangle7
-        x: 590
+        id: rectangle2
+        x: 555
         y: 8
-        width: 47
+        width: 121
         height: 26
         color: "#100f0f"
         Text {
-            id: text34
+            id: text30
             x: 8
             y: 8
             width: 47
             height: 15
             color: "#ffffff"
-            text: qsTr("Zoom")
+            text: qsTr("Ahrs Configuration")
             font.pixelSize: 12
         }
     }
 
     Rectangle {
-        id: rectangleConnection6
-        x: 590
-        y: 372
-        width: 440
-        height: 134
+        id: rectangleFocus3
+        x: 548
+        y: 61
+        width: 194
+        height: 149
         color: "#100f0f"
         radius: 4
         border.color: "#ffffff"
+        border.width: 1
 
         Text {
-            id: text35
-            x: 21
-            y: 34
+            id: text31
+            x: 22
+            y: 33
             color: "#ffffff"
-            text: qsTr("Current zoom position")
+            text: qsTr("x(m)")
             font.pixelSize: 12
+        }
+
+        Rectangle {
+            id: rectangle
+            x: 63
+            y: 29
+            width: 121
+            height: 21
+            color: "#ffffff"
+
+            TextEdit {
+                id: textEdit
+                x: 0
+                y: 1
+                width: 121
+                height: 20
+                font.pixelSize: 12
+            }
+
+            TextEdit {
+                id: textEdit1
+                x: 0
+                y: 36
+                width: 121
+                height: 20
+                font.pixelSize: 12
+            }
+
+            TextEdit {
+                id: textEdit2
+                x: 0
+                y: 73
+                width: 121
+                height: 20
+                font.pixelSize: 12
+            }
+
+            TextEdit {
+                id: textEdit3
+                x: 211
+                y: -2
+                width: 121
+                height: 20
+                font.pixelSize: 12
+            }
+
+            TextEdit {
+                id: textEdit4
+                x: 211
+                y: 32
+                width: 121
+                height: 20
+                font.pixelSize: 12
+            }
+
+            TextEdit {
+                id: textEdit5
+                x: 211
+                y: 68
+                width: 121
+                height: 20
+                font.pixelSize: 12
+            }
+        }
+
+        Text {
+            id: text33
+            x: 22
+            y: 68
+            color: "#ffffff"
+            text: qsTr("y(m)")
+            font.pixelSize: 12
+        }
+
+        Rectangle {
+            id: rectangle4
+            x: 63
+            y: 64
+            width: 121
+            height: 21
+            color: "#ffffff"
+        }
+
+        Text {
+            id: text34
+            x: 24
+            y: 102
+            color: "#ffffff"
+            text: qsTr("z(m)")
+            font.pixelSize: 12
+        }
+
+        Rectangle {
+            id: rectangle5
+            x: 63
+            y: 102
+            width: 121
+            height: 21
+            color: "#ffffff"
+        }
+    }
+
+    Rectangle {
+        id: rectangle3
+        x: 562
+        y: 49
+        width: 121
+        height: 26
+        color: "#100f0f"
+        Text {
+            id: text32
+            x: 8
+            y: 8
+            width: 47
+            height: 15
+            color: "#ffffff"
+            text: qsTr("Gnss Antena Offset")
+            font.pixelSize: 12
+        }
+    }
+
+    Rectangle {
+        id: rectangleFocus4
+        x: 767
+        y: 61
+        width: 233
+        height: 149
+        color: "#100f0f"
+        radius: 4
+        border.color: "#ffffff"
+        border.width: 1
+        Text {
+            id: text35
+            x: 5
+            y: 33
+            color: "#ffffff"
+            text: qsTr("Roll")
+            font.pixelSize: 12
+        }
+
+        Rectangle {
+            id: rectangle6
+            x: 54
+            y: 26
+            width: 121
+            height: 21
+            color: "#ffffff"
         }
 
         Text {
             id: text36
-            x: 21
-            y: 69
-            width: 121
-            height: 14
+            x: 4
+            y: 65
             color: "#ffffff"
-            text: qsTr("Horizontal Field of View")
+            text: qsTr("Pitch")
             font.pixelSize: 12
-            font.family: "Times New Roman"
+        }
+
+        Rectangle {
+            id: rectangle8
+            x: 54
+            y: 61
+            width: 121
+            height: 21
+            color: "#ffffff"
         }
 
         Text {
-            id: text38
-            x: 249
-            y: 69
-            width: 107
-            height: 14
+            id: text37
+            x: 4
+            y: 102
             color: "#ffffff"
-            text: qsTr("Vetical Field of View")
-            font.family: "Times New Roman"
+            text: qsTr("Heading")
             font.pixelSize: 12
+        }
+
+        Rectangle {
+            id: rectangle9
+            x: 54
+            y: 98
+            width: 121
+            height: 21
+            color: "#ffffff"
         }
 
         Text {
             id: text39
-            x: 165
-            y: 34
-            width: 157
-            height: 13
+            x: 185
+            y: 30
             color: "#ffffff"
-            text: qsTr("0")
-            horizontalAlignment: Text.AlignHCenter
+            text: qsTr("degrees")
             font.pixelSize: 12
         }
 
         Text {
             id: text40
-            x: 153
-            y: 70
-            width: 85
-            height: 13
+            x: 185
+            y: 65
             color: "#ffffff"
-            text: qsTr("55")
+            text: qsTr("degrees")
             font.pixelSize: 12
-            horizontalAlignment: Text.AlignHCenter
         }
 
         Text {
             id: text41
-            x: 362
-            y: 70
-            width: 85
-            height: 13
+            x: 185
+            y: 102
             color: "#ffffff"
-            text: qsTr("55")
+            text: qsTr("degrees")
             font.pixelSize: 12
-            horizontalAlignment: Text.AlignHCenter
         }
-
-        CustomizedButton {
-            id: customizedButton
-            x: 229
-            y: 100
-            width: 58
-            height: 20
-            color: "#888a85"
-
-            Text {
-                id: text42
-                x: 15
-                y: 4
-                color: "#ffffff"
-                text: qsTr("Read")
-                horizontalAlignment: Text.AlignHCenter
-                font.pixelSize: 12
-            }
-        }
-        border.width: 1
     }
 
     Rectangle {
-        id: rectangle8
-        x: 605
-        y: 358
-        width: 76
+        id: rectangle10
+        x: 785
+        y: 49
+        width: 121
         height: 26
         color: "#100f0f"
         Text {
-            id: text37
+            id: text38
             x: 8
             y: 8
             width: 47
             height: 15
             color: "#ffffff"
-            text: qsTr("Zoom State")
+            text: qsTr("Alignment Angels")
             font.pixelSize: 12
         }
     }
